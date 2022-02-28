@@ -25,7 +25,7 @@ class NewController extends Controller
             "source_currency" => "required",
             "target_currency" => "required",
             "recipient" => "required",
-            "source_amount" => "required"
+            "source_amount" => "required|numeric"
         ]);
         
         $xr = 1 ;
