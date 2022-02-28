@@ -6,3 +6,5 @@ The balance of the bank account is not hardcoded but derived from the entire tra
 
 It uses freecurrencyapi.net api to get the exchange rate of currency pairs.
 
+Try simaba at http://simba112.herokuapp.com/
+
