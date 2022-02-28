@@ -44,15 +44,15 @@ class NewController extends Controller
         $trans = Transaction::create([
             "source_account_id" => $source_account->id,
             "target_account_id" => $target_account->id,
-            "exchange_rate" => round($xr,2),
-            "source_amount" => round( $data['source_amount'],2),
+            "exchange_rate" => $xr,
+            "source_amount" =>  $data['source_amount'],
         ]);
         try {
 
             DB::beginTransaction();
 
             $source_account->balance -= $data['source_amount'];
-            $target_account->balance += round( $xr * $data['source_amount'] , 2);
+            $target_account->balance +=  $xr * $data['source_amount'];
             $trans->confirmed = true;
 
             $source_account->save();

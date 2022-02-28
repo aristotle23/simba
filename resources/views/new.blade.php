@@ -74,7 +74,7 @@
                                 <label for="source_amount" class="col-3 col-form-label text-md-end">You're Sending</label>
 
                                 <div class="col-8">
-                                    <input id="source_amount" type="text"
+                                    <input id="source_amount" type="number"
                                         class="form-control @error('source_amount') is-invalid @enderror"
                                         name="source_amount" value="{{ old('source_amount') }}" required
                                         autocomplete="off" autofocus>
@@ -88,9 +88,6 @@
 
                             </div>
                             
-
-
-
                             <div class="row mb-0">
                                 <div class="col-md-6 offset-md-3">
                                     <button type="submit" class="btn btn-primary">

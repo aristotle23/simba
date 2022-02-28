@@ -9,7 +9,7 @@
                         <div class="row">
                             @foreach ($accounts as $acc)
                                 <div class="col">
-                                    <h4><small>{{$acc->currency->currency}} : </small><strong>{{$acc->balance}}</strong></h4>
+                                    <h4><small>{{$acc->currency->currency}} : </small><strong>{{round($acc->balance,2)}}</strong></h4>
                                 </div>
                             @endforeach
 
@@ -52,7 +52,7 @@
                                         <td>
                                             <span
                                                 class=" @if ($item[7]) text-success @else text-danger @endif">
-                                                {{ $item[3] }}
+                                                {{ round($item[3],2) }}
                                             </span>
                                         </td>
                                         <td>{{ $item[4] }}</td>
