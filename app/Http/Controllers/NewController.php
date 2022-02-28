@@ -44,7 +44,7 @@ class NewController extends Controller
         $trans = Transaction::create([
             "source_account_id" => $source_account->id,
             "target_account_id" => $target_account->id,
-            "exchange_rate" => $xr,
+            "exchange_rate" => round($xr,2),
             "source_amount" => round( $data['source_amount'],2),
         ]);
         try {
