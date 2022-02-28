@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 "symbol" => "£",
-                "currency" => "GDP"
+                "currency" => "GBP"
             ],
             [
                 "symbol" => "₦",
