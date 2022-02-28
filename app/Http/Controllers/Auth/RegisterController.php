@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\Account;
 use App\Models\Currency;
 use App\Models\Transaction;
 use App\Providers\RouteServiceProvider;
